@@ -1,0 +1,24 @@
+﻿<Window x:Class="wpftest.sales_history"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sales History" 
+        Height="700" Width="1000" WindowStartupLocation="CenterScreen" WindowState="Normal" ResizeMode="CanMinimize"
+         WindowStyle="SingleBorderWindow"
+        BorderBrush="DimGray" BorderThickness="15"
+       Icon="Images/ic.jpg" 
+        >
+    <Grid  Background="#FFE5E5E5" Margin="0,0,0,0" HorizontalAlignment="Center" Width="1350">
+        <DataGrid Name="dg_sales_history2" AutoGenerateColumns="True"  Background="White" HorizontalAlignment="Center" Height="243" VerticalAlignment="Top" Width="600" Margin="375,386,375,0" ></DataGrid>
+        <Label Content="Medicine Sales History" BorderThickness="3" HorizontalAlignment="Center" Foreground="Green"  FontSize="25" FontWeight="SemiBold"  Margin="540,-2,409,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,-0.577" FontFamily="Broadway" Width="401" Height="44"/>
+        <Label Content="Enter Sales Date:" HorizontalAlignment="Left" Margin="406,113,0,0" VerticalAlignment="Top"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="815,106,0,0" VerticalAlignment="Top" Width="136" Height="39" Click="btn_search_Click_1"/>
+        <DataGrid Background="White" Name="dg_sales_history" AutoGenerateColumns="True" HorizontalAlignment="Center" Margin="375,163,375,0" VerticalAlignment="Top" Height="181" Width="600"/>
+        <TextBox Name="txt_search" HorizontalAlignment="Left" Height="23" Margin="517,115,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="201"/>
+        <Label Content="dd-mm-yyyy" HorizontalAlignment="Left" Margin="719,113,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label Content="All Sales History" FontSize="15" FontWeight="SemiBold" FontStyle="Italic" HorizontalAlignment="Center" Margin="612,360,612,0" VerticalAlignment="Top" RenderTransformOrigin="1.493,-0.187"/>
+        <Label FontSize="15" FontWeight="Bold" Content="Date:" HorizontalAlignment="Left" Margin="414,52,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="Red" Name="lbl_date" FontSize="18" FontWeight="Bold" Content="" HorizontalAlignment="Left" Margin="475,51,0,0" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Total sales(TK):" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="644,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,-0.231"/>
+        <Label Foreground="Red" Name="lbl_total_sales" FontSize="18" FontWeight="Bold" Content="" HorizontalAlignment="Left" Margin="780,53,0,0" VerticalAlignment="Top" Width="179"/>
+    </Grid>
+</Window>

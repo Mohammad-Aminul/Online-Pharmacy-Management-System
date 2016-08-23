@@ -1,0 +1,19 @@
+﻿<Window x:Class="wpftest.about"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Developer Info" Height="400" Width="500"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Normal"
+        WindowStyle="SingleBorderWindow"
+        ResizeMode="NoResize"
+        Icon="Images\ic.jpg"
+        >
+    <Grid Background="#aaff66">
+        <Image Source="Images\pharmacy2.jpg" HorizontalAlignment="Left" Width="250" Height="200" Margin="120,-16,0,188"></Image>
+        <Label Foreground="Red" FontWeight="SemiBold" Content="Pharmacy management system v1.0.0" HorizontalAlignment="Left" Margin="144,185,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="Blue" FontWeight="SemiBold" Content="Mohammad Aminul Islam" HorizontalAlignment="Left" Margin="160,247,0,0" VerticalAlignment="Top" Width="204" Height="29"/>
+        <Label Foreground="Crimson" FontWeight="SemiBold" Content="Email:aminul.ruet@yahoo.com" HorizontalAlignment="Left" Margin="161,281,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="Blue" FontWeight="SemiBold" Content="Developer:" HorizontalAlignment="Left" Margin="119,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,0.038"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="wpftest.Purchase_history"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Purchase History" 
+        Height="700" Width="1000" WindowStartupLocation="CenterScreen" WindowState="Normal" ResizeMode="CanMinimize"
+         WindowStyle="SingleBorderWindow"
+        BorderBrush="DimGray" BorderThickness="15"
+       Icon="Images/ic.jpg" 
+        >
+    <Grid  Background="#FFE5E5E5" Margin="0,0,0,0" HorizontalAlignment="Center" Width="1350">
+        <DataGrid Name="dg_purchase_history2" AutoGenerateColumns="True"  Background="White" HorizontalAlignment="Center" Height="253" VerticalAlignment="Top" Width="620" Margin="365,376,365,0" ></DataGrid>
+        <Label Content="Medicine Purchase History" BorderThickness="3" HorizontalAlignment="Center" Foreground="Green"  FontSize="25" FontWeight="SemiBold"  Margin="540,-2,409,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,-0.577" FontFamily="Broadway" Width="401" Height="44"/>
+        <Label Content="Enter Purchase Date:" HorizontalAlignment="Left" Margin="388,119,0,0" VerticalAlignment="Top"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="814,114,0,0" VerticalAlignment="Top" Width="154" Height="42" Click="btn_search_Click_1"/>
+        <DataGrid Background="White" Name="dg_purchase_history" AutoGenerateColumns="True" HorizontalAlignment="Center" Margin="365,168,365,0" VerticalAlignment="Top" Height="177" Width="620"/>
+        <TextBox Name="txt_search" HorizontalAlignment="Left" Height="23" Margin="512,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="201"/>
+        <Label Content="dd-mm-yyyy" HorizontalAlignment="Left" Margin="723,119,0,0" VerticalAlignment="Top" Width="86" RenderTransformOrigin="2.662,1.731"/>
+        <Label FontSize="15" FontWeight="Bold" Content="Date:" HorizontalAlignment="Left" Margin="414,52,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="Red" Name="lbl_date" FontSize="18" FontWeight="Bold" Content="" HorizontalAlignment="Left" Margin="475,51,0,0" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Total Purchase(TK):" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="616,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,-0.231"/>
+        <Label Foreground="Red" Name="lbl_total_sales" FontSize="18" FontWeight="Bold" Content="" HorizontalAlignment="Left" Margin="780,54,0,0" VerticalAlignment="Top" Width="179"/>
+        <Label Content="All Purchase Medicine History" FontSize="14" FontWeight="SemiBold" Foreground="Red" HorizontalAlignment="Left" Margin="570,349,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

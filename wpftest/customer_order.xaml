@@ -1,0 +1,40 @@
+﻿<Window x:Class="wpftest.customer_order"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+     Title="Customer Order" 
+        Height="700" Width="1000" WindowStartupLocation="CenterScreen" WindowState="Normal" ResizeMode="CanMinimize"
+         WindowStyle="SingleBorderWindow"
+        BorderBrush="DimGray" BorderThickness="15"
+       Icon="Images/ic.jpg" 
+        >
+    <Grid  Background="#FFE5E5E5" Margin="0,0,0,0" HorizontalAlignment="Center" Width="1350">
+        <Label Content="Customer Orders" BorderThickness="3" HorizontalAlignment="Center" Foreground="Green"  FontSize="25" FontWeight="SemiBold"  Margin="540,-2,409,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,-0.577" FontFamily="Broadway" Width="401" Height="44"/>
+        <Label FontSize="15" FontWeight="SemiBold" Foreground="Green" Content="Today's Order" HorizontalAlignment="Left" Margin="579,89,0,0" VerticalAlignment="Top"/>
+        <DataGrid  Background="White" Name="dg_today_order" AutoGenerateColumns="True" HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" Height="218" Width="905" SelectionChanged="dg_today_order_SelectionChanged"/>
+        <Label Content="All Orders" FontSize="15" FontWeight="SemiBold" Foreground="Green" HorizontalAlignment="Left" Margin="586,359,0,0" VerticalAlignment="Top"/>
+        <DataGrid Background="White" Name="dg_all_orders" HorizontalAlignment="Center" Margin="0,391,0,0" VerticalAlignment="Top" Height="226" Width="901" SelectionChanged="dg_all_orders_SelectionChanged"/>
+        <GroupBox BorderBrush="Aqua"  HorizontalAlignment="Left" Margin="221,36,0,0" VerticalAlignment="Top" Width="904" Height="57">
+            <StackPanel Margin="0,0,0,0" HorizontalAlignment="Center" Width="904">
+                <Label  x:Name="lbluname" FontSize="14" FontWeight="SemiBold" Margin="20,11,0,0" FontStyle="Italic" Content="Select Client ID:" HorizontalAlignment="Left" Height="26"   Width="114"/>
+                <TextBox x:Name="txt_client_id" HorizontalAlignment="Left" Height="26" Margin="150,-24,0,0" TextWrapping="Wrap" Text=""  Width="156" IsEnabled="False"/>
+                <Label x:Name="lblpass" Margin="331,-30,0,0" FontSize="14" FontWeight="SemiBold" FontStyle="Italic" Content="Enter Order Status:" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="139"/>
+                <ComboBox x:Name="cb_order_status" HorizontalAlignment="Left" Margin="476,-27,0,0" VerticalAlignment="Top" Width="207" Height="29">
+                    <ComboBoxItem Content="In Process"></ComboBoxItem>
+                    <ComboBoxItem Content="Fullfilled"></ComboBoxItem>
+                    <ComboBoxItem Content="Back Order"></ComboBoxItem>
+                    <ComboBoxItem Content="Cancelled"></ComboBoxItem>
+                </ComboBox>
+                <Button  FontSize="15" FontWeight="SemiBold" x:Name="btnlogin"  HorizontalAlignment="Left" Margin="740,-33,0,0" VerticalAlignment="Top" Width="138" Height="39" ClickMode="Press" Click="btn_manageorder_click" >
+                    <Button.Content>
+                        <StackPanel Orientation="Horizontal">
+                          
+                            <Label HorizontalAlignment="Center" Content="Manage Order" Margin="0,0,0,0" Height="35"/>
+                        </StackPanel>
+                    </Button.Content>
+                </Button>
+            </StackPanel>
+        </GroupBox>
+
+
+    </Grid>
+</Window>

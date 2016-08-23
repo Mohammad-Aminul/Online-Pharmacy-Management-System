@@ -1,0 +1,57 @@
+﻿<Window x:Class="wpftest.import_new_medicine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          Title="purchase_form" Height="700" Width="1000" WindowStartupLocation="CenterScreen" WindowState="Normal" ResizeMode="CanMinimize"
+         WindowStyle="SingleBorderWindow"
+        BorderBrush="DimGray" BorderThickness="15"
+      Icon="Images/ic.jpg"
+        >
+
+    <Grid Margin="-1,0,1,0" Background="#FFE5E5E5">
+        <Button ClickMode="Press" Name="btn_purchase" Content="Save" HorizontalAlignment="Left" Margin="385,355,0,0" VerticalAlignment="Top" Width="127" Click="btn_purchase_click" Height="29" />
+        <Label Content="Medicine Name:" HorizontalAlignment="Left" Margin="71,103,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txt_medicine_name" HorizontalAlignment="Left" Height="26" Margin="180,105,0,0" VerticalAlignment="Top" Width="222"></TextBox>
+        <Label  FontSize="25" HorizontalAlignment="Center" FontFamily="BroadWay" FontWeight="SemiBold" Content="Import New Medicine" Foreground="Green" VerticalAlignment="Top" Width="355"/>
+        <Label Content="Medicine Type:" HorizontalAlignment="Left" Margin="76,60,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.579,-0.308"/>
+        <Label Content="Purchase Quantitiy:" HorizontalAlignment="Left" Margin="53,147,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txt_purchase_quantity" HorizontalAlignment="Left" Height="26" Margin="180,149,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222" LostFocus="txt_purchase_quantity_LostFocus"   />
+        <Label Content="Unit Price:" HorizontalAlignment="Left" Margin="99,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,-0.308"/>
+        <TextBox Name="txt_unit_price" HorizontalAlignment="Left" Height="26" Margin="180,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222" LostFocus="txt_unit_price_LostFocus"/>
+        <Label Content="Total Price:" HorizontalAlignment="Left" Margin="93,236,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,-0.308"/>
+        <TextBox Name="txt_totalprice" HorizontalAlignment="Left" Height="26" Margin="180,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222" IsEnabled="False"/>
+        <Label Content="Company Name:" HorizontalAlignment="Left" Margin="65,277,0,0" VerticalAlignment="Top" Width="105"/>
+        <TextBox Name="txt_company" HorizontalAlignment="Left" Height="26" Margin="179,279,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222"/>
+        <Label Content="Purchase Date:" HorizontalAlignment="Left" Margin="483,127,0,0" VerticalAlignment="Top"/>
+        <GridSplitter BorderBrush="White" BorderThickness="1" HorizontalAlignment="Center" Height="2" Margin="0,348,0,0" VerticalAlignment="Top" Width="951"/>
+        <GridSplitter BorderBrush="White" BorderThickness="1" HorizontalAlignment="Center" Height="2" Margin="0,389,0,0" VerticalAlignment="Top" Width="951"/>
+
+
+        <Label Content="Medicine Position:" HorizontalAlignment="Left" Margin="469,57,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txt_medicine_position" HorizontalAlignment="Left" Height="23" Margin="596,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221"/>
+        <Label Content="Available Quantity:" HorizontalAlignment="Left" Margin="469,88,0,0" VerticalAlignment="Top"/>
+        <TextBox  Name="txt_available_quantity" HorizontalAlignment="Left" Height="23" Margin="596,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222" IsEnabled="False"/>
+        <DataGrid AutoGenerateColumns="True" Name="grid_purchase_table" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Height="200" Width="920" Margin="0,0,0,25" >
+
+        </DataGrid>
+        <ComboBox  Name="cb_medicine_type" HorizontalAlignment="Left" Margin="181,65,0,0" VerticalAlignment="Top" Width="222" IsEditable="True">
+            <ComboBox.ContextMenu>
+                <ContextMenu AllowDrop="True"/>
+            </ComboBox.ContextMenu>
+            <ComboBoxItem Content="Tablet"/>
+            <ComboBoxItem Content="Capsule"/>
+            <ComboBoxItem Content="Syrup"/>
+            <ComboBoxItem Content="Saline"/>
+            <ComboBoxItem Content="Injection"/>
+            <ComboBoxItem Content="Drop"/>
+            <ComboBoxItem Content="Spray"/>
+        </ComboBox>
+        <Label Content="" Foreground="Black" FontWeight="SemiBold" FontSize="20" Name="lbl_show_purchase_date" HorizontalAlignment="Left" Margin="769,119,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.421,-0.462" Width="147" Height="36">
+        </Label>
+        <DatePicker Name="date_picker" HorizontalAlignment="Left" Margin="598,130,0,0" VerticalAlignment="Top" Width="148" SelectedDateChanged="date_picker_SelectedDateChanged"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="530,355,0,0" VerticalAlignment="Top" Width="75" Height="29" Click="btn_exit_click"/>
+        <Label Content="All Available Medicines in Pharmacy"   FontSize="14" FontWeight="SemiBold" Foreground="Red"  HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+
+</Window>
