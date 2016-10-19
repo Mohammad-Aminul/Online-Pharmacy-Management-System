@@ -46,7 +46,7 @@
         </DataGrid>
         <TextBox Name="txt_company_name" Foreground="Green" HorizontalAlignment="Left" Height="23" Margin="195,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="231" IsEnabled="False"/>
         <Label Content="Sales Date:" HorizontalAlignment="Left" Margin="99,290,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.737,-1.077" Height="26" Width="68"/>
-        <ComboBox Text="select Type" Name="cb_medicine_type" HorizontalAlignment="Left" Margin="196,87,0,0" VerticalAlignment="Top" Width="231" Height="28" IsReadOnly="True" IsSynchronizedWithCurrentItem="True" Cursor="Arrow" DropDownClosed="cb_medicine_type_DropDownClosed" SelectionChanged="cb_medicine_type_SelectionChanged" >
+        <ComboBox Text="select Type" Name="cb_medicine_type" HorizontalAlignment="Left" Margin="196,87,0,0" VerticalAlignment="Top" Width="231" Height="28" IsReadOnly="True" IsSynchronizedWithCurrentItem="True" Cursor="Arrow" DropDownClosed="cb_medicine_type_DropDownClosed"  >
             <ComboBoxItem  Content="Tablet"/>
             <ComboBoxItem Content="Capsule"/>
             <ComboBoxItem Content="Syrup"/>

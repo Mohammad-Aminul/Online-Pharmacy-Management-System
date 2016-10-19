@@ -539,7 +539,5 @@ namespace wpftest
             get_date_time_in_voucher();
         }
 
-
-
     }
 }

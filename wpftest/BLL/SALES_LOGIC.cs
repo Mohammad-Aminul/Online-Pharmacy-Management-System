@@ -103,7 +103,7 @@ namespace wpftest
             {
                 MySqlConnection mysqlcon = new MySqlConnection(ConnectionString);
                 mysqlcon.Open();
-                string query = "insert into tbl_sales values('" + medicine_name + "','" + medicine_type + "','" + required_quantity + "','" + unit_price + "','" + total_price + "','" + current_date + "','" + company_name + "')";
+                string query = "insert into tbl_sales(Medicine_name,Medicine_type,Sales_quantity,unit_price,total_price,sell_date,Company_name) values('" + medicine_name + "','" + medicine_type + "','" + required_quantity + "','" + unit_price + "','" + total_price + "','" + current_date + "','" + company_name + "')";
                 MySqlCommand mysqlcomm = new MySqlCommand(query, mysqlcon);
                 mysqlcomm.ExecuteNonQuery();
                 mysqlcon.Close();
@@ -111,7 +111,7 @@ namespace wpftest
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message+"error is here");
             }
         }
 
