@@ -16,9 +16,7 @@ namespace wpftest
         public MainWindow()
         {
             InitializeComponent();
-            
         }
-         
 
             
         private void btnlogin_Click(object sender, RoutedEventArgs e)

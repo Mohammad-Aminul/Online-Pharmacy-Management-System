@@ -100,3 +100,6 @@ D:\WPF project\wpftest1\wpftest\obj\Debug\wpftest_MarkupCompile.cache
 D:\WPF project\wpftest1\wpftest\obj\Debug\wpftest.g.resources
 D:\WPF project\wpftest1\wpftest\obj\Debug\wpftest.Properties.Resources.resources
 D:\WPF project\wpftest1\wpftest\obj\Debug\wpftest.csproj.GenerateResource.Cache
+E:\WPF project\wpftest1\wpftest\bin\Debug\wpftest.exe.config
+E:\WPF project\wpftest1\wpftest\obj\Debug\wpftest.exe
+E:\WPF project\wpftest1\wpftest\obj\Debug\wpftest.pdb
